@@ -51,9 +51,8 @@ Then add the public URL of this file to your podcast player, and off you go. To 
 
 ## TODO
 
-1. Support for artwork, arbitrarily defined in the case of the channel and extracted from tag metadata for the episodes.
-2. Better configurability, eg. support for reading the configuration file from a path specified on the command line.
-3. Overriding the episode metadata with values taken from the config file.
+1. Better configurability, eg. support for reading the configuration file from a path specified on the command line.
+2. Overriding the episode metadata with values taken from the config file.
 
 ## Development
 
