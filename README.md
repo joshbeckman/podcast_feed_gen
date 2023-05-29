@@ -49,6 +49,22 @@ This will output the rss to stdout. Verify that it's as you expected, and then w
 
 Then add the public URL of this file to your podcast player, and off you go. To update the feed, just put some more files into the directory and run the script again.
 
+### Configuration Options:
+
+Options to put as key/value pairs in `podcast_feed_gen.yml`:
+
+- `base_url`: String, public facing URL of the directory, needs to have a trailing `/`
+- `title`: String, podcast title
+- `description`: String, podcast description
+- `link`: String, optional, podcast homepage/link
+- `author`: String, optional, podcast author name
+- `email`: String, optional, podcast author email
+- `image_url`: String, optional, podcast art/cover image
+- `category`: String, optional, [iTunes podcast category](https://podcasters.apple.com/support/1691-apple-podcasts-categories) for indexing
+- `copyright`: Boolean, optional, include current year copyright
+- `explicit`: Boolean, optional, mark podcast as explicit
+- `keywords`: String, optional, comma-separated keywords for podcast indexing
+
 ## TODO
 
 1. Better configurability, eg. support for reading the configuration file from a path specified on the command line.
@@ -57,6 +73,8 @@ Then add the public URL of this file to your podcast player, and off you go. To 
 ## Development
 
 podcast_feed_gen is written in ruby. We've got some rspec tests, we've got a `Dockerfile`, and we've got a [TinyCI](https://github.com/JonnieCache/tinyci) config.
+
+Consult the [iTunes podcast RSS/XML tagging reference](https://help.apple.com/itc/podcasts_connect/#/itcb54353390).
 
 ## Contributing
 
